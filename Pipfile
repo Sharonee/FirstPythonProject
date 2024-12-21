@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-uvicorn = "*"
 fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 pytest = "*"
