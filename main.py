@@ -121,19 +121,25 @@
 
 ###################Decorators ################################
 
-def response_to_maiman(func):
-    def wrapper(*args, **kwargs):
-        print("A Mailman is coming to help you!")
-        func(*args, **kwargs)
-    return wrapper
-
-@response_to_maiman   # We are using sending this function to respond_to_mailman function
-def make_sound(sound):
-    print(sound)
-
-make_sound("Hello")
+# def response_to_maiman(func):
+#     def wrapper(*args, **kwargs):
+#         print("A Mailman is coming to help you!")
+#         func(*args, **kwargs)
+#     return wrapper
+#
+# @response_to_maiman   # We are using sending this function to respond_to_mailman function
+# def make_sound(sound):
+#     print(sound)
+#
+# make_sound("Hello")
 
 ########################Generators##################
+
+########################Json and Text Response##################
+
+
+
+
 
 
 
