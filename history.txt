@@ -1,0 +1,16 @@
+  832  python
+  833  pip install uvicorn
+  834  deactivate
+  835  python
+  836  python
+  837  python3
+  838  source venv/bin/activate
+  839  pip list
+  840  pip freeze
+  841  pip freeze > requirments.txt
+  842  diactivate
+  843  deactivate
+  844  history > history.txt
+  845  pip install pipenv
+  846  pip3 install pipenv
+  847  pipenv install fastapi
