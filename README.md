@@ -21,4 +21,7 @@ pipenv install uvicorn >
 
 Store all Packages in the Requirements file: pip freeze > requirments.txt
 
+Install Dev Package > pipeve install --dev pytest
+
+
 
