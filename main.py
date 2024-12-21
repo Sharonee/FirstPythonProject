@@ -42,13 +42,71 @@
 #################################
 
 
-from fastapi import FastAPI
+# from fastapi import FastAPI
+# app = FastAPI()
+#
+# @app.get("/")
+# def home():
+#     return "Hello World"
 
-app = FastAPI()
 
-@app.get("/")
-def home():
-    return "Hello World"
+###### Classes ##############
+
+class Animal:
+     fur_color = "Black"
+     friends = []
+     def __init__(self, height, weight): # To initialize the class
+        self.height = height
+        self.weight = weight
+        self._private_var = "This is a private variable"
+        self.__secret_var = "This is a secret variable"
+
+     def print_height_weight(self):
+        print(f"Height: {self.height} and Weight: {self.weight}")
+
+     def get_height(self):
+         return self.height
+
+     def get_weight(self):
+         return self.weight
+
+     def get_fur_color(self):
+        return self.fur_color
+
+     def get_friend(self):
+         return self.friends
+
+     def set_fur_color(self, color):
+         self.fur_color = color
+
+     def set_height(self, height):
+         self.height = height
+
+     def set_weight(self, weight):
+         self.weight = weight
+
+
+
+animal_1 = Animal(8, 70)
+animal_2 = Animal(6, 50)
+
+# animal_1.print_height_weight()
+# animal_2.print_height_weight()
+
+animal_1.friends.append("Jerry")
+
+print(animal_1.get_height(), animal_1.get_friend())
+print(animal_2.get_weight())
+print(animal_1.get_fur_color())
+print(animal_1._private_var)
+
+###############################################################
+
+
+
+
+
+
 
 
 
