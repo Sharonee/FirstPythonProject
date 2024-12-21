@@ -39,5 +39,10 @@ def home():
 
 ###############################################
 
+Classes
 
+        self._private_var = "This is a private variable"
+        self.__secret_var = "This is a secret variable"
+
+##################################################
 
